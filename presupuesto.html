@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solicita tu presupuesto en NovaWeb Studio">
+    <title>NovaWeb Studio | Presupuesto</title>
+
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="contenedor">
+            
+            <!-- Logo -->
+            <div class="logo">
+                <h1>NovaWeb Studio</h1>
+            </div>
+
+            <!-- Menú de navegación -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="presupuesto.html" class="activo">Presupuesto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= FORMULARIO ================= -->
+    <section>
+        <div class="contenedor formulario-contenedor">
+
+            <h2>Solicita tu Presupuesto</h2>
+            <p style="text-align:center; margin-bottom:40px;">
+                Rellena el siguiente formulario y nos pondremos en contacto contigo.
+            </p>
+
+            <form action="#" method="post">
+
+                <!-- Nombre -->
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" placeholder="Introduce tu nombre completo">
+                </div>
+
+                <!-- Email -->
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                </div>
+
+                <!-- Teléfono -->
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="123456789">
+                </div>
+
+                <!-- Información adicional -->
+                <div class="campo">
+                    <label for="mensaje">Solicite más información:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Describe tu proyecto..."></textarea>
+                </div>
+
+                <!-- Política de privacidad -->
+                <div class="campo checkbox">
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">
+                        He leído y acepto la Política de Privacidad
+                    </label>
+                </div>
+
+                <!-- Botón enviar -->
+                <div class="campo">
+                    <button type="submit" class="boton">Enviar Solicitud</button>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="contenedor footer-grid">
+
+            <!-- Redes sociales -->
+            <div>
+                <h3>Síguenos</h3>
+                <p>
+                    <a href="#">Facebook</a> |
+                    <a href="#">Instagram</a> |
+                    <a href="#">LinkedIn</a>
+                </p>
+            </div>
+
+            <!-- Dirección -->
+            <div>
+                <h3>Dirección</h3>
+                <p>Calle Ficticia 123<br>28000 Madrid, España</p>
+            </div>
+
+            <!-- Aviso legal -->
+            <div>
+                <h3>Aviso Legal</h3>
+                <p>&copy; 2026 NovaWeb Studio. Todos los derechos reservados.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
